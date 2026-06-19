@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.resources.Identifier;
 
+import net.thomas.mod.Item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -13,7 +14,7 @@ public class ThomasMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ModItems.initialize();
 	}
 
 	public static Identifier id(String path) {
