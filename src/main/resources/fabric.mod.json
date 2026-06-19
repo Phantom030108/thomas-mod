@@ -3,7 +3,7 @@
 	"id": "thomas-mod",
 	"version": "${version}",
 	"name": "Thomas Mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "GGG",
 	"authors": [
 		"Me!"
 	],
@@ -20,6 +20,9 @@
 		],
 		"fabric-datagen": [
 			"net.thomas.mod.ThomasModDataGenerator"
+		],
+		"client": [
+			"net.thomas.mod.ThomasModClient"
 		]
 	},
 	"mixins": [
