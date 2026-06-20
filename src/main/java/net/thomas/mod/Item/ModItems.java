@@ -13,11 +13,13 @@ import java.util.function.Function;
 
 public class ModItems {
     public static final Item RUBY = register("ruby", Item::new, new Item.Properties());
+    public static final Item RUBY_SHARD = register("ruby_shard", Item::new, new Item.Properties());
 
     public static void initialize() {
         // Get the event for modifying entries in the ingredients group.
         // And register an event handler that adds our suspicious item to the ingredients group.
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS).register((creativeTab) -> creativeTab.accept(ModItems.RUBY));
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS).register((creativeTab) -> creativeTab.accept(ModItems.RUBY_SHARD));
     }
 
     public static <T extends Item> T register(String name, Function<Item.Properties, T> itemFactory, Item.Properties settings) {
